@@ -1,0 +1,12 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "plugins": ["flowtype", "html"],
+  "extends": ["airbnb-base", "plugin:flowtype/recommended"],
+  "rules": { "quotes": ["error", "double"] },
+  "env": {
+    "browser": true,
+    "node": true,
+    "commonjs": true,
+  }
+}
