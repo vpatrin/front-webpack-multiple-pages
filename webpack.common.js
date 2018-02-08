@@ -31,7 +31,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: ["babel-loader", "eslint-loader"],
+        use: ["babel-loader"],
       },
       {
         test: /\.css$/,
@@ -51,7 +51,6 @@ module.exports = {
                   require("postcss-import")({ root: loader.resourcePath }),
                   require("stylelint")(),
                   require("postcss-cssnext")(),
-                  require("cssnano")(),
                 ],
               },
             },
@@ -76,7 +75,6 @@ module.exports = {
                 plugins: loader => [
                   require("postcss-import")({ root: loader.resourcePath }),
                   require("postcss-cssnext")(),
-                  require("cssnano")(),
                 ],
               },
             },
