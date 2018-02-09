@@ -1,15 +1,66 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Bar - Login</title>
-  </head>
-  <body>
-    <form id="authentication">
-      <h1>Login</h1>
-    </form>
-  </body>
+  <title>Bar - Login</title>
+</head>
+<body>
+
+<!-- THE NAVIGATION BAR -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary justify-content-between">
+  <a class="navbar-brand" href="#">Accueil</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Vente <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Prix</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Afficher les produits disponibles</a>
+      </li>
+    </ul>
+  </div>
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Chercher un compte" aria-label="Search">
+    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Valider</button>
+  </form>
+</nav>
+
+
+<!-- THE LOGIN FORM -->
+
+<div class="container">
+  <div class="row justify-content-md-center align-middle" style="height: 1000px;">
+
+    <div class="col-md-auto">
+
+      <form>
+        <h2> Login page </h2>
+
+        <label for="exampleInputEmail1">Nom de compte</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter login">
+        <small id="emailHelp" class="form-text text-muted">The login you created.</small>
+
+        <label for="exampleInputPassword1">Mot de passe</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </form>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Remember me</label>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</div>
+</body>
 </html>
